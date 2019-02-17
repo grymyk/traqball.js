@@ -1,0 +1,51 @@
+body {
+  div#root {
+    background-color: #222;
+    color: #8EE4AF;
+
+	section#viewport {
+	  perspective: 700px;
+	  perspective-origin: 50% 50%;
+	}
+	
+	article#box {
+	  transform-style: preserve-3d;
+	}
+	
+	#box section {
+	  transform-style: flat;
+	  backface-visibility: hidden;
+	}
+	
+	#front, #back {
+	  width: 250px;
+	  height: 354px;
+	  transform: translate3d(0, 0, 37px);
+	}
+	
+	#back {
+	  transform: rotateY(180deg) translate3d(0, 0, 37px);
+	}
+	
+	#top, #bottom {
+	  width: 250px;
+	  height: 74px;
+	  transform: rotateX(90deg) translate3d(0, 0, 37px);
+	}
+	
+	#bottom {
+	  transform: rotateX(-90deg) translate3d(0, 0, 317px);
+	}
+	
+	#left, #right {
+	  width: 74px;
+	  height: 354px;
+	  transform: rotateY(-90deg) translate3d(0, 0, 37px);
+	}
+	
+	#right{
+	  transform: rotateY(90deg) translate3d(0, 0, 213px);
+	}
+  }
+}
+
